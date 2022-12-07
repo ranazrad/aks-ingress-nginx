@@ -16,6 +16,6 @@ terraform {
       version = "1.14.0"
     }
   }
-  
-  backend "azurerm" {}
+  # TODO: Implementing mechanism of remote state and locking state for executing TF from Azure Release pipeline and for working together as a team
+  # backend "azurerm" {}
 }
