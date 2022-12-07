@@ -11,11 +11,11 @@ terraform {
       version = "2.6.0"
 	}	
 	
-	kubectl = {
-      source  = "gavinbunney/kubectl"
-      version = "1.14.0"
-    }
-  }
+	// kubectl = {
+  //     source  = "gavinbunney/kubectl"
+  //     version = "1.14.0"
+  //   }
+  // }
   backend "azurerm" {
     resource_group_name  = "ACDResourceGroup"
     storage_account_name = "acdstorage"
