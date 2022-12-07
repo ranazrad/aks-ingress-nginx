@@ -8,7 +8,7 @@ AKS deployment with Nginx Ingress controller using Terraform.
   **<code>az login</code>**  
 3. Apply iac using Terraform  
   **<code>terraform init</code>**  
-  **<code>terraform apply=</code>**  
+  **<code>terraform apply</code>**  
 4. Azure Container registry should be in place (create one)
 5. AKS and ACR Integration 
   **<code>az aks update -n <aks-name> -g <aks-rg> --attach-acr <acr-name></code>**  
