@@ -16,6 +16,6 @@ AKS deployment with Nginx Ingress controller using Terraform.
 7. Go to Azure pipelines and trigger both webapp-blue and webapp-green as a CI build process
 8. Go to Azre Releases and create new release for each webapp, blue and green.
 9. Both were deployed on AKS
-10. Go to AKS dashboard on Azure, services and find the load-balancer external ip.
+10. Go to AKS dashboard on Azure, Services And Ingresses and find the LoadBalancer External IP.
 11. navigate to <lb-external-ip>/blue to view the blue webapp web-page.
 12. navigate to <lb-external-ip>/green to view the green webapp web-page.
