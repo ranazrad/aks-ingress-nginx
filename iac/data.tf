@@ -1,8 +1,8 @@
 data "azurerm_client_config" "current" {}
 
 data "azurerm_key_vault" "tf_kv" {
-  name                = azurerm_key_vault.tf_kv.name
-  resource_group_name = azurerm_key_vault.tf_kv.name
+  name                = azurerm_key_vault.mssre_vault.name
+  resource_group_name = azurerm_key_vault.mssre_vault.name
 }
 
 data "azurerm_kubernetes_cluster" "aks" {
