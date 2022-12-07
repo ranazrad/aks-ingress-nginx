@@ -16,6 +16,10 @@ terraform {
       version = "1.14.0"
     }
   }
-  # TODO: Implementing mechanism of remote state and locking state for executing TF from Azure Release pipeline and for working together as a team
-  # backend "azurerm" {}
+  backend "azurerm" {
+    resource_group_name  = "ACDResourceGroup"
+    storage_account_name = "acdstorage"
+    container_name       = "tfstate"
+    key                  = "%secretkey%"
+  }
 }
