@@ -12,12 +12,12 @@ resource "azurerm_kubernetes_cluster" "aks" {
   location            = azurerm_resource_group.aks_rg.location
   resource_group_name = azurerm_resource_group.aks_rg.name
   dns_prefix          = "aksdns"
-# Should deploy at least two nodes.
-# That way, the workload will have a high availability pattern with two replicas.
-# One node deployment as a result of quota in Azure trial account.
+  
+  # Should deploy at least two nodes.
+  # That way, the workload will have a high availability pattern with two replicas.
+  # One node deployment as a result of quota in Azure trial account.
   default_node_pool {
     name       = "default"
-    // node_count = 1
     vm_size    = "Standard_Ds2_v2"
     enable_auto_scaling = true
     min_count           = 1
