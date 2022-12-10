@@ -1,7 +1,10 @@
 # Introduction 
 AKS deployment by Terraform with:
+
 Nginx Ingress controller (Helm)
+
 Cluster Autoscaler enabled Min:2 - Max:10
+
 TLS
 
 
